@@ -3,7 +3,7 @@ const Info = () => {
   return (
     <div>
       <div>Info</div>
-      <p className={`test`}>
+      <p>
         <h1>Hi</h1>
       </p>
     </div>

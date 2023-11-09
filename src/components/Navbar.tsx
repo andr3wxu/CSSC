@@ -5,13 +5,14 @@ import "../styles/Navbar.css";
 interface Props {
   idArray: string[];
   headingArray: string[];
+  imgSrc: string;
 }
 
-function Navbar({ idArray, headingArray }: Props) {
+function Navbar({ idArray, headingArray, imgSrc }: Props) {
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 83) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -22,10 +23,13 @@ function Navbar({ idArray, headingArray }: Props) {
 
   return (
     <nav className={`navbar ${isSticky ? "sticky" : "unsticky"}`}>
-      <ul>
+      <img src={imgSrc} alt="logo" />
+      <ul className="link-box">
         {idArray.map((item, index) => (
           <li key={index}>
-            <a href={"#" + item}>{headingArray[index]}</a>
+            <a className="navbar-link" href={"#" + item}>
+              {headingArray[index]}
+            </a>
           </li>
         ))}
       </ul>
