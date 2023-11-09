@@ -20,23 +20,29 @@ a:hover {
   }  
 
 .navbar {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(245,241,251,1) 43%, rgba(255,255,255,1) 100%);
     position: sticky;
     top: 0px;
     display: flex;
     flex-direction: row;
     background-color: white;
     height: 40px;
-    transition: height 0.3s ease;
-    border-bottom: solid;
-    border-color: lightgrey;
+    border: solid;
     border-width: 1px;
-    transition: padding 0.3s;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-width: 3px;
+    border-color: #bc99fc;
+    border-bottom-color: lightgrey;
+    transition: padding 0.3s ease;
+    transition: height 0.3s ease;
 }
 
 .navbar.sticky {
-    height: 45px;
+    height: 48px;
     padding-top: 3px;
-
+    opacity: 0.95;
 }
 
 .link-box {

@@ -11,7 +11,7 @@ function Navbar({ idArray, headingArray }: Props) {
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 79) {
+      if (window.scrollY > 900) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -21,7 +21,7 @@ function Navbar({ idArray, headingArray }: Props) {
   });
 
   return (
-    <nav className={`navbar ${isSticky ? "sticky" : "unsticky"}`}>
+    <nav className={`navbar ${isSticky ? "sticky" : ""}`}>
       <ul className="link-box">
         {idArray.map((item, index) => (
           <li key={index}>

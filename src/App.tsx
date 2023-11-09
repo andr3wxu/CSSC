@@ -14,7 +14,7 @@ const headingArray = ["Home", "Why", "Info", "Team", "FAQ"];
 function App() {
   return (
     <>
-      <TitleCard imgSrc="public/images/cssc-logo.png" />
+      <TitleCard imgSrc="/images/cssc-logo.png" />
       <Navbar idArray={idArray} headingArray={headingArray} />
       <Page id="home" content={<Home />} />
       <Page id="why" content={<Why />} />
