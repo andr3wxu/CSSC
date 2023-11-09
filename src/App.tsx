@@ -8,16 +8,12 @@ import Team from "./pages/Team.tsx";
 import FAQ from "./pages/FAQ.tsx";
 
 const idArray = ["home", "why", "info", "team", "faq"];
-const headingArray = ["Home", "why?", "info", "team", "FAQ"];
+const headingArray = ["Home", "Why?", "Info", "Team", "FAQ"];
 
 function App() {
   return (
     <>
-      <Navbar
-        idArray={idArray}
-        headingArray={headingArray}
-        imgSrc="components/cssc-logo.png"
-      />
+      <Navbar idArray={idArray} headingArray={headingArray} />
       <Page id="home" content={<Home />} />
       <Page id="why" content={<Why />} />
       <Page id="info" content={<Info />} />

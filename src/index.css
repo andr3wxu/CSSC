@@ -15,7 +15,9 @@
 }
 
 body {
-  margin: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+
   /* display: flex;
   place-items: center;
   min-width: 320px;
