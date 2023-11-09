@@ -1,4 +1,4 @@
-import React from "react";
+import "../styles/TitleCard.css";
 
 const TitleCard = () => {
   return <div>TitleCard</div>;
