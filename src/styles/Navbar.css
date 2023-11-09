@@ -7,42 +7,53 @@ a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 17px;
     padding-inline: 10px;
     padding-top: 4px;
     padding-bottom: 4px;
-    
+    transition: color 0.15s ease, background-color 0.15s ease, border-radius 0.15s ease;
 }
 
-a:hover {
-    color: #8663c6;
-    background-color: rgb(241, 241, 241);
+a:hover, a:focus {
+    color: white;
+    background-color: #bc99fc;
+    border-radius: 3px;
+    cursor: pointer;
   }  
 
-.navbar {
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(245,241,251,1) 43%, rgba(255,255,255,1) 100%);
+.navbar-container {
+    display: flex;
+    justify-content: center;
     position: sticky;
     top: 0px;
+}
+
+.navbar {
+    opacity: 0;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(245,241,251,1) 43%, rgba(255,255,255,1) 100%);
     display: flex;
     flex-direction: row;
     background-color: white;
     height: 40px;
+    width: 450px;
     border: solid;
     border-width: 1px;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
+    border-radius: 8px;
     border-top-width: 3px;
     border-color: #bc99fc;
     border-bottom-color: lightgrey;
-    transition: padding 0.3s ease;
-    transition: height 0.3s ease;
+    transition: padding 0.5s ease, height 0.5s ease, width 0.2s, border-radius 0.5s ease;
+    animation: fade 1s ease 1.5s forwards;
 }
 
 .navbar.sticky {
     height: 48px;
     padding-top: 3px;
     opacity: 0.95;
+    border-radius: 0px;
+    /* transform: translateX(0); */
+    width: 100%;
 }
 
 .link-box {
@@ -50,7 +61,18 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 15px;
+    justify-content: space-evenly;
+    z-index: 100;
+    transition: column-gap 0.3s ease;
+}
+
+.link-box.sticky {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 30px;
     justify-content: space-evenly;
     z-index: 100;
 }
