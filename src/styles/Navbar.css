@@ -42,17 +42,17 @@ a:hover, a:focus {
     border-radius: 8px;
     border-top-width: 3px;
     border-color: #bc99fc;
-    border-bottom-color: lightgrey;
+    /* border-bottom-color: lightgrey; */
     transition: padding 0.5s ease, height 0.5s ease, width 0.2s, border-radius 0.5s ease;
     animation: fade 1s ease 1.5s forwards;
 }
 
 .navbar.sticky {
     height: 48px;
-    padding-top: 3px;
+    padding-top: 2px;
     opacity: 0.95;
     border-radius: 0px;
-    /* transform: translateX(0); */
+    border-bottom-color: rgb(227, 227, 227);
     width: 100%;
 }
 

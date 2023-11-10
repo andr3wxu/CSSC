@@ -11,17 +11,25 @@ function Navbar({ idArray, headingArray }: Props) {
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 651) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
+      const element = document.getElementById("nav");
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        const top = rect.top;
+        if (top === 0) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
       }
     };
     addEventListener("scroll", handleScroll);
+    return () => {
+      removeEventListener("scroll", handleScroll);
+    };
   });
 
   return (
-    <div className="navbar-container">
+    <div className="navbar-container" id="nav">
       <nav className={`navbar ${isSticky ? "sticky" : ""}`}>
         <ul className={`link-box ${isSticky ? "sticky" : ""}`}>
           {idArray.map((item, index) => (

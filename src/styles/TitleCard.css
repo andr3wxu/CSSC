@@ -11,14 +11,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin-bottom: 6vh;
   padding-top: 20vh;
 }
 
 .title-logo {
   opacity: 0;
-  height: 250px;
-  width: 250px;
+  height: 30vh;
+  width: 30vh;
   margin: 0 auto;
   z-index: 300;
   animation: spin 1s ease 0.5s, fade 1s ease 0.5s forwards;
@@ -28,6 +28,7 @@
   opacity: 0;  
   align-items: center;
   font-weight: 500;
+  font-size: 6vh;
   color: #bc99fc;
   animation: fade 1s ease 0.9s forwards;
   margin-bottom: 0;
@@ -36,6 +37,7 @@
 .subtitle {
   opacity: 0;
   font-weight: 400;
+  font-size: 3vh;
   animation: fade 1s ease 1.2s forwards;
   margin-top: 5px;
 }
