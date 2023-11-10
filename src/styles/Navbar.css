@@ -48,9 +48,11 @@ a:hover, a:focus {
 }
 
 .navbar.sticky {
-    height: 48px;
-    padding-top: 2px;
+    /* height: 48px; */
+    /* padding-top: 2px; */
     opacity: 0.95;
+    border-right: none;
+    border-left: none;
     border-radius: 0px;
     border-bottom-color: rgb(227, 227, 227);
     width: 100%;
