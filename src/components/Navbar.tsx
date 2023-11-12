@@ -5,15 +5,16 @@ import "../styles/Navbar.css";
 interface Props {
   idArray: string[];
   headingArray: string[];
+  inSection: boolean[];
 }
 
-function Navbar({ idArray, headingArray }: Props) {
+function Navbar({ idArray, headingArray, inSection }: Props) {
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const element = document.getElementById("nav");
-      if (element) {
-        const rect = element.getBoundingClientRect();
+      const navbar = document.getElementById("nav");
+      if (navbar) {
+        const rect = navbar.getBoundingClientRect();
         const top = rect.top;
         if (top === 0) {
           setIsSticky(true);
@@ -34,7 +35,10 @@ function Navbar({ idArray, headingArray }: Props) {
         <ul className={`link-box ${isSticky ? "sticky" : ""}`}>
           {idArray.map((item, index) => (
             <li key={index}>
-              <a className="navbar-link" href={"#" + item}>
+              <a
+                className={`navbar-link ${inSection[index] ? "active" : ""}`}
+                href={"#" + item}
+              >
                 {headingArray[index]}
               </a>
             </li>

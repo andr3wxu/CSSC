@@ -1,9 +1,9 @@
 ul {
     padding: 0px;
-    list-style:none;
+    list-style: none;
 }
 
-a {
+.navbar-link {
     text-decoration: none;
     color: #333;
     font-weight: 500;
@@ -11,15 +11,23 @@ a {
     padding-inline: 10px;
     padding-top: 4px;
     padding-bottom: 4px;
-    transition: color 0.15s ease, background-color 0.15s ease, border-radius 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-radius 0.15s ease, border-width 0.15s ease;
 }
 
-a:hover, a:focus {
-    color: white;
-    background-color: #bc99fc;
+.navbar-link:hover {
+    color: #333;
+    background-color: #ede3ff;
     border-radius: 3px;
     cursor: pointer;
-  }  
+}  
+
+.navbar-link.active {
+    color: white;
+    background-color: #b396e9; /*#c6a8ff*/
+    border-radius: 3px;
+    cursor: pointer;
+}  
+
 
 .navbar-container {
     display: flex;
@@ -44,13 +52,13 @@ a:hover, a:focus {
     border-color: #bc99fc;
     /* border-bottom-color: lightgrey; */
     transition: padding 0.5s ease, height 0.5s ease, width 0.2s, border-radius 0.5s ease;
-    animation: fade 1s ease 1.5s forwards;
+    animation: nav-fade 1s ease 1.5s forwards;
 }
 
 .navbar.sticky {
     /* height: 48px; */
     /* padding-top: 2px; */
-    opacity: 0.95;
+    opacity: 0.92;
     border-right: none;
     border-left: none;
     border-radius: 0px;
@@ -74,7 +82,7 @@ a:hover, a:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 30px;
+    column-gap: 20px;
     justify-content: space-evenly;
     z-index: 100;
 }
@@ -86,3 +94,12 @@ a:hover, a:focus {
 @media (min-width: 1300px) {
 
 }
+
+@keyframes nav-fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.92;
+    }
+  }
