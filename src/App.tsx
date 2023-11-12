@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "./App.css";
 import TitleCard from "./components/TitleCard.tsx";
 import Navbar from "./components/Navbar.tsx";
@@ -8,19 +9,50 @@ import Info from "./pages/Info.tsx";
 import Team from "./pages/Team.tsx";
 import FAQ from "./pages/FAQ.tsx";
 
-const idArray = ["home", "why", "info", "team", "faq"];
-const headingArray = ["Home", "Why", "Info", "Team", "FAQ"];
-
 function App() {
+  const idArray = ["home", "why", "info", "team", "faq"];
+  const headingArray = ["Home", "Why", "Info", "Team", "FAQ"];
+  const pageArray = [<Home />, <Why />, <Info />, <Team />, <FAQ />]; // This can probably be optimized?
+
+  const [inSection, setInSection] = useState(Array(idArray.length).fill(false));
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log(window.scrollY);
+      setInSection(
+        idArray.map((item) => {
+          const section = document.getElementById(item);
+          if (section) {
+            const rect = section.getBoundingClientRect();
+            // if (window.scrollY >= rect.top && window.scrollY < rect.bottom) {
+            //   console.log(rect.top);
+            //   console.log(rect.bottom);
+            //   console.log(item);
+            // }
+            return window.scrollY >= rect.top && window.scrollY < rect.bottom;
+          }
+        })
+      );
+    };
+    addEventListener("scroll", handleScroll);
+    return () => {
+      removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  // useEffect(() => {
+  //   console.log(inSection);
+  // });
+
   return (
     <>
       <TitleCard imgSrc="/images/cssc-logo.png" />
-      <Navbar idArray={idArray} headingArray={headingArray} />
-      <Page id="home" content={<Home />} />
-      <Page id="why" content={<Why />} />
-      <Page id="info" content={<Info />} />
-      <Page id="team" content={<Team />} />
-      <Page id="faq" content={<FAQ />} />
+      <Navbar
+        idArray={idArray}
+        headingArray={headingArray}
+        inSection={inSection}
+      />
+      {pageArray.map((page, index) => (
+        <Page key={idArray[index]} id={idArray[index]} content={page} />
+      ))}
     </>
   );
 }
