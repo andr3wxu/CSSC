@@ -1,0 +1,7 @@
+.page {
+    transition: opacity 0.6s linear;
+}
+
+.page.invisible {
+    opacity: 0;
+}

@@ -51,7 +51,13 @@ function App() {
         inSection={inSection}
       />
       {pageArray.map((page, index) => (
-        <Page key={idArray[index]} id={idArray[index]} content={page} />
+        <Page
+          key={index}
+          index={index}
+          id={idArray[index]}
+          content={page}
+          inSection={inSection}
+        />
       ))}
     </>
   );
