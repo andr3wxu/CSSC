@@ -16,6 +16,7 @@ const Page = ({ index, id, content, inSection }: Props) => {
       setIsVisible(true);
     }
   }, inSection);
+
   return (
     <>
       {console.log(isVisible, inSection)}

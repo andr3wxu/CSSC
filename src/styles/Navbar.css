@@ -16,7 +16,7 @@ ul {
 
 .navbar-link:hover {
     color: #333;
-    background-color: #ede3ff;
+    background-color: #e8defa;
     border-radius: 3px;
     cursor: pointer;
 }  
@@ -34,23 +34,22 @@ ul {
     justify-content: center;
     position: sticky;
     top: 0px;
+    z-index: 500;
 }
 
 .navbar {
     opacity: 0;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(245,241,251,1) 43%, rgba(255,255,255,1) 100%);
+    background: var(--cssc-gradient);
     display: flex;
     flex-direction: row;
     background-color: white;
     height: 40px;
     width: 450px;
     border: solid;
-    border-width: 1px;
+    border-width: 3px;
     border-radius: 8px;
     border-top-width: 3px;
-    border-color: #bc99fc;
-    /* border-bottom-color: lightgrey; */
+    border-color: var(--cssc-lavender);
     transition: padding 0.5s ease, height 0.5s ease, width 0.2s, border-radius 0.5s ease;
     animation: nav-fade 1s ease 1.5s forwards;
 }
@@ -61,6 +60,7 @@ ul {
     opacity: 0.92;
     border-right: none;
     border-left: none;
+    border-bottom-width: 1px;
     border-radius: 0px;
     border-bottom-color: rgb(227, 227, 227);
     width: 100%;
