@@ -1,0 +1,7 @@
+.countdown {
+    border-radius: 10px;
+    background: var(--cssc-gradient);
+    font-size: 45px;
+    font-family: 'DM Mono', monospace;
+    padding-inline: 15px;
+}
