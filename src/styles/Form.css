@@ -1,0 +1,13 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+.form {
+    margin-top: 2em;
+    width: 45em;
+    height: 30em;
+    border: solid;
+    border-color: var(--cssc-purple);
+    border-width: 3px;
+    border-radius: 13px;
+}

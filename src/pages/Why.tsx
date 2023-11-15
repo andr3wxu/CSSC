@@ -1,9 +1,16 @@
 const Why = () => {
   return (
     <div>
-      <div>Home</div>
-      <h1>Hi</h1>
-      <p>hi</p>
+      <div className="home-container">
+        <div className="info-box">
+          <div className="info-card">
+            <h1 className="home-heading">
+              WHY <br />
+              <span className="emphasis"> CSSC</span>?
+            </h1>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

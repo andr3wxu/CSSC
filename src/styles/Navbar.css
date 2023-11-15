@@ -55,9 +55,7 @@ ul {
 }
 
 .navbar.sticky {
-    /* height: 48px; */
-    /* padding-top: 2px; */
-    opacity: 0.92;
+    opacity: 0.98;
     border-right: none;
     border-left: none;
     border-bottom-width: 1px;
@@ -100,6 +98,6 @@ ul {
         opacity: 0;
     }
     to {
-        opacity: 0.92;
+        opacity: 0.98;
     }
   }

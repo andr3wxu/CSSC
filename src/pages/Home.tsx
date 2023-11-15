@@ -1,5 +1,6 @@
 import List from "../components/List";
 import Countdown from "../components/Countdown";
+import Form from "../components/Form.tsx";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -27,7 +28,7 @@ const Home = () => {
         </div>
         <img className="home-image" src="/images/home.jpg" />
       </div>
-      <button className="sign-up-button">SIGN UP</button>
+      <Form />
     </div>
   );
 };

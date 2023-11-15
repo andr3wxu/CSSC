@@ -59,6 +59,9 @@ function App() {
           inSection={inSection}
         />
       ))}
+      <a href="#home" className="sign-up-button">
+        SIGN UP
+      </a>
     </>
   );
 }
