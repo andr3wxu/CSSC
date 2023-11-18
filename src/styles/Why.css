@@ -1,11 +1,21 @@
-.home-box {
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 0.6em !important;
+}
+
+.why-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.home-container {
+.why-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -17,7 +27,7 @@ h1 {
     color: #333;
 }
 
-.info-box {
+.info-box.why {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,31 +41,52 @@ h1 {
     z-index: 10;
 }
 
-.info-card {
+.info-card.why {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
     justify-content: center;
-    margin-inline: 10;
     border-radius: 10px;
     border-bottom: solid;
     border-color: var(--cssc-lavender);
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    background: var(--cssc-gradient);
 }
 
-.home-heading {
+.why-heading {
+    padding-inline: 0.4em;
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
+    margin: 0;
     font-weight: 500;
     font-size: 40px;
-    padding-left: 0.7em;
-    padding-right: 0.7em;
-    padding-top: 0.3em;
 }
 
 .emphasis {
     color: var(--cssc-purple);
     font-weight: 600;
-    font-size: 55px;
+    font-size: 45px;
+}
+
+.why-blurb {
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    padding: 1.1em;
+    padding-top: 0.2em;
+}
+
+.why-image {
+    position: relative;
+    left: -5%;
+    width: 20em;
+    margin-top: 7em;
+    border: solid;
+    border-width: 3px;
+    border-color: #333;
+    border-radius: 10px;
+    z-index: 0;
 }
