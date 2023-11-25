@@ -1,10 +1,10 @@
 import "../styles/Navbar.css";
 const Info = () => {
   return (
-    <div>
-      <div>Home</div>
-      <h1>Hi</h1>
-      <p>hi</p>
+    <div className="why-box">
+      <div className="why-container">
+        hi
+      </div>
     </div>
   );
 };

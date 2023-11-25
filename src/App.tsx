@@ -24,8 +24,8 @@ function App() {
           if (section) {
             const rect = section.getBoundingClientRect();
             return (
-              rect.top <= window.innerHeight * 0.3 &&
-              rect.bottom >= window.innerHeight * 0.3
+              rect.top <= window.innerHeight * 0.4 &&
+              rect.bottom >= window.innerHeight * 0.4
             );
           }
         })

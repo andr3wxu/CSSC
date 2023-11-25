@@ -2,6 +2,7 @@ import List from "../components/List";
 import Countdown from "../components/Countdown";
 import Form from "../components/Form.tsx";
 import "../styles/Home.css";
+import "../styles/Page.css";
 
 const Home = () => {
   const headingArray = ["Date", "Location", "Cost", "Who"];
@@ -14,8 +15,8 @@ const Home = () => {
   const eventDate = new Date("April 23, 2024 09:00:00"); // change date
 
   return (
-    <div className="home-box">
-      <div className="home-container">
+    <div className="box">
+      <div className="container">
         <div className="info-box">
           <div className="info-card">
             <h1 className="home-heading">
@@ -26,7 +27,7 @@ const Home = () => {
           </div>
           <Countdown date={eventDate} />
         </div>
-        <img className="home-image" src="/images/home.jpg" />
+        <img className="image home" src="/images/home.jpg" />
       </div>
       <Form />
     </div>
