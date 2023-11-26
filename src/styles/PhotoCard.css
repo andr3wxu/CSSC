@@ -1,6 +1,7 @@
 .info-box.photo-card {
     border-color: var(--cssc-lavender);
-    margin: 0.5em;
+    margin: 1em;
+    width: 13em;
 }
 
 .info-box.photo-card:hover {
@@ -8,6 +9,9 @@
 }
 
 .info-card.caption {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
     border-bottom: none;
     border-top: solid;
     border-color: var(--cssc-lavender);
@@ -19,5 +23,8 @@
 }
 
 .img-photos {
-    width: 10em;
+    width: 13em;
+    border-radius: 7px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }

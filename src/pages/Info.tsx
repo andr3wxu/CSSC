@@ -30,19 +30,6 @@ const Info = () => {
             </div>
           </div>
           <div className="container info-lower">
-            <div className="info-box photos">
-              <div className="info-card photos">
-                <h1 className="heading sub">PHOTOS</h1>
-              </div>
-              <p>
-                View <span className="keyword">photos</span> from our past
-                events!
-              </p>
-              <div className="photo-container">
-                <PhotoCard img="" caption="2019" />
-                <PhotoCard img="" caption="2022" />
-              </div>
-            </div>
             <div className="info-box format">
               <div className="info-card">
                 <h1 className="heading sub">FORMAT</h1>
@@ -50,6 +37,31 @@ const Info = () => {
                   A more detailed schedule will be mailed out closer to the
                   event date.
                 </p>
+              </div>
+            </div>
+            <div className="photo-container">
+              <div className="info-box photos">
+                <div className="info-card photos">
+                  <h1 className="heading sub photos">PHOTOS</h1>
+                  <p className="p-photos">
+                    Click <span className="bold">below</span> to view{" "}
+                    <span className="bold">photos</span> from our past events!
+                  </p>
+                </div>
+              </div>
+              <div className="p2019">
+                <PhotoCard
+                  img="/images/2019.jpg"
+                  caption="2019"
+                  link="https://photos.app.goo.gl/SvhyvWgVVuZkD6fK7"
+                />
+              </div>
+              <div className="p2022">
+                <PhotoCard
+                  img="/images/2022.jpg"
+                  caption="2022"
+                  link="https://photos.app.goo.gl/R14r6dE7zuWYqYg88"
+                />
               </div>
             </div>
           </div>

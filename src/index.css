@@ -4,6 +4,7 @@
   --cssc-purple: #bc99fc;
   --cssc-lavender: rgb(205, 191, 237);
   --cssc-gradient: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(245,241,251,1) 43%, rgba(255,255,255,1) 100%);
+  --cssc-dark-gradient: linear-gradient(90deg, rgba(181,159,230,1) 0%, rgba(186,153,235,1) 45%, rgba(182,150,235,1) 100%);
 
   font-family: 'Rubik', sans-serif, Helvetica, Arial, sans-serif;
   line-height: 1.5;
