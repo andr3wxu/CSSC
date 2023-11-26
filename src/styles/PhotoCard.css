@@ -1,10 +1,14 @@
 .info-box.photo-card {
     border-color: var(--cssc-lavender);
     margin: 1em;
-    width: 13em;
+    width: 11em;
 }
 
-.info-box.photo-card:hover {
+.info-box.photo-card.big {
+    width: 20em;
+}
+
+.info-box.photo-card.not-big:hover {
     cursor: pointer;
 }
 
@@ -23,7 +27,7 @@
 }
 
 .img-photos {
-    width: 13em;
+    width: 11em;
     border-radius: 7px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
