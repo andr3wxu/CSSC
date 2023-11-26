@@ -9,12 +9,12 @@ const Why = () => {
         <div className="why-container-right">
           <div className="info-box">
             <div className="info-card why">
-              <h1 className="why-heading">
+              <h1 className="heading">
                 WHY
                 <span className="emphasis"> CSSC</span>
               </h1>
             </div>
-            <div className="why-blurb">
+            <div className="blurb why">
               <div>
                 <h2>Who are we?</h2>
                 <p>

@@ -28,7 +28,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     position: relative;
     margin-inline: 0.7em;
     left: 0;
@@ -42,16 +41,28 @@
 .info-card {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    align-items: flex-start;
+    padding: 0;
     justify-content: center;
-    margin-inline: 10;
     border-radius: 10px;
     border-bottom: solid;
     border-color: var(--cssc-lavender);
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    background: var(--cssc-gradient);
+}
+
+.heading {
+    padding-inline: 0.4em;
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
+    margin: 0;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.heading.sub {
+    font-size: 25px;
 }
 
 .image {
@@ -62,4 +73,15 @@
     border-color: #333;
     border-radius: 10px;
     z-index: 0;
+}
+
+.blurb {
+    display: flex;
+    flex-direction: column;
+    padding: 1.1em;
+    padding-top: 0.2em;
+}
+
+.list-box {
+    padding-inline: 1em;
 }

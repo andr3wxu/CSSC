@@ -1,0 +1,23 @@
+.info-box.photo-card {
+    border-color: var(--cssc-lavender);
+    margin: 0.5em;
+}
+
+.info-box.photo-card:hover {
+    cursor: pointer;
+}
+
+.info-card.caption {
+    border-bottom: none;
+    border-top: solid;
+    border-color: var(--cssc-lavender);
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-photos {
+    width: 10em;
+}

@@ -34,27 +34,14 @@ h1 {
     background: var(--cssc-gradient);
 }
 
-.why-heading {
-    padding-inline: 0.4em;
-    padding-top: 0.2em;
-    padding-bottom: 0.1em;
-    margin: 0;
-    font-weight: 500;
-    font-size: 40px;
-}
-
 .emphasis {
     color: var(--cssc-purple);
     font-weight: 600;
     font-size: 45px;
 }
 
-.why-blurb {
-    width: 30em;
-    display: flex;
-    flex-direction: column;
-    padding: 1.1em;
-    padding-top: 0.2em;
+.blurb.why {
+    max-width: 30em;
 }
 
 .image.why {

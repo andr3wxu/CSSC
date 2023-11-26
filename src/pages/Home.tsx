@@ -17,13 +17,15 @@ const Home = () => {
   return (
     <div className="box">
       <div className="container">
-        <div className="info-box">
-          <div className="info-card">
+        <div className="info-box home">
+          <div className="info-card home">
             <h1 className="home-heading">
               GET READY FOR <br />
               <span className="emphasis"> CSSC 2024</span>
             </h1>
-            <List headingArray={headingArray} infoArray={infoArray} />
+            <div className="list-box home">
+              <List headingArray={headingArray} infoArray={infoArray} />
+            </div>
           </div>
           <Countdown date={eventDate} />
         </div>

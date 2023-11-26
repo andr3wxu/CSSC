@@ -1,6 +1,7 @@
 .form-container {
     display: flex;
     justify-content: center;
+    z-index: 10;
 }
 .form {
     margin-top: 2em;
