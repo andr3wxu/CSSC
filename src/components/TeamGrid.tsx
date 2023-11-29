@@ -1,24 +1,29 @@
 import "../styles/TeamGrid.css";
+import FlipCard from "./FlipCard";
 
 interface Props {
   nameArray: string[];
-  // imageArray: string[];
+  imageArray: string[];
 }
 
-const TeamGrid = ({ nameArray }: Props) => {
+const TeamGrid = ({ nameArray, imageArray }: Props) => {
   return (
     <>
       <div className="team-grid">
         {nameArray.map((name, index) => (
           <div className={`team-member ${(index - 1) % 3 == 0 ? "hex" : ""}`}>
-            <div className="hexagon-container">
-              <div className="hexagon">{nameArray[index]}</div>
-            </div>
+            <FlipCard
+              nameArray={nameArray}
+              imageArray={imageArray}
+              index={index}
+            />
           </div>
         ))}
       </div>
     </>
   );
 };
+
+//{nameArray[index]}
 
 export default TeamGrid;

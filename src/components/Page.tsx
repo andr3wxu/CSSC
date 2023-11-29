@@ -19,7 +19,6 @@ const Page = ({ index, id, content, inSection }: Props) => {
 
   return (
     <>
-      {console.log(isVisible, inSection)}
       <section id={id} className={`page ${isVisible ? "" : "invisible"}`}>
         {content}
       </section>
