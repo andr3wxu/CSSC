@@ -2,14 +2,11 @@
     border-color: var(--cssc-lavender);
     margin: 1em;
     width: 11em;
+    transition: 0.15s;
 }
 
-.info-box.photo-card.big {
-    width: 20em;
-}
-
-.info-box.photo-card.not-big:hover {
-    cursor: pointer;
+.info-box.photo-card:hover {
+    border-color: var(--cssc-purple);
 }
 
 .info-card.caption {
@@ -19,7 +16,7 @@
     border-bottom: none;
     border-top: solid;
     border-color: var(--cssc-lavender);
-    border-radius: 10px;
+    border-radius: 7px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     justify-content: center;
@@ -28,7 +25,7 @@
 
 .img-photos {
     width: 11em;
-    border-radius: 7px;
+    border-radius: 6px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }

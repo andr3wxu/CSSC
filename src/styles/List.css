@@ -1,3 +1,9 @@
+.info-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 15em;
+}
+
 .info-type {
     font-weight: 500;
 }

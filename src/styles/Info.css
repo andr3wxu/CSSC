@@ -81,7 +81,11 @@
 
 .info-box.format {
     max-width: 30em;
-    margin-right: 2em;
+    margin-inline: 2em;
+}
+
+.blurb.event-info {
+    padding: 0.1em;
 }
 
 .blurb.info {
@@ -108,10 +112,12 @@
 .medal-trophy {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 3em;
+    justify-content: center;
 }
 
 .image.info.medal {
     margin-top: 4em;
-    margin-right: 2em;
+    margin-inline: 2em;
 }

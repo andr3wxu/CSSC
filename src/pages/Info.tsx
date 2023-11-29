@@ -23,7 +23,7 @@ const Info = () => {
                 <span className="emphasis"> INFO</span>
               </h1>
             </div>
-            <div className="why-blurb">
+            <div className="blurb event-info">
               <div className="list-box">
                 <List headingArray={headingArray} infoArray={infoArray} />
               </div>
