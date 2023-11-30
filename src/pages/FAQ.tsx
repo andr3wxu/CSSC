@@ -1,4 +1,5 @@
 import Accordion from "../components/Accordion";
+import SignUpButton from "../components/SignUpButton";
 import "../styles/FAQ.css";
 
 const FAQ = () => {
@@ -17,7 +18,7 @@ const FAQ = () => {
   return (
     <div>
       <div className="box">
-        <div className="container">
+        <div className="container faq">
           <div className="info-box faq">
             <div className="info-card faq">
               <h1 className="heading">
@@ -39,6 +40,32 @@ const FAQ = () => {
             </div>
           </div>
           <img src="/images/faq-graphic.png" className="faq-graphic" />
+          <div className="info-box sponsor">
+            <div className="info-card sponsor">
+              <h1 className="heading sub photos">SPONSORS</h1>
+              <p className="p-photos">
+                Our event is made possible with generous support from:
+              </p>
+            </div>
+          </div>
+          <div className="sponsor-box">
+            <a href="https://calgaryfoundation.org/" target="_blank">
+              <img
+                src="/images/calgary-foundation.png"
+                className="sponsor-image"
+              />
+            </a>
+            <a href="https://ucalgary.ca/" target="_blank">
+              <img
+                src="/images/uofc-sponsor.png"
+                className="sponsor-image uofc"
+              />
+            </a>
+          </div>
+          <div className="signup-message">
+            And, if you haven't already...
+            <SignUpButton />
+          </div>
         </div>
       </div>
     </div>

@@ -39,7 +39,7 @@ function App() {
 
   return (
     <>
-      <TitleCard imgSrc="/images/cssc-logo.png" />
+      <TitleCard imgSrc="/images/logo-fancy.png" />
       <Navbar
         idArray={idArray}
         headingArray={headingArray}
@@ -54,7 +54,6 @@ function App() {
           inSection={inSection}
         />
       ))}
-      <SignUpButton />
     </>
   );
 }

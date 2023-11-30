@@ -1,3 +1,10 @@
+.container.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .info-box.faq {
     max-width: 50em;
 }
@@ -12,4 +19,58 @@
 
 .faq-graphic {
     max-width: 50em;
+}
+
+.info-box.sponsor {
+    margin-bottom: 1em;
+    max-width: 11em;
+    border: double;
+    border-color: var(--cssc-purple);
+    border-width: 10px;
+}
+
+.info-card.sponsor {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border:none;
+    border-radius: 0;
+    background: var(--cssc-dark-gradient)
+}
+
+.sponsor-text {
+    color: white;
+    font-size: 20px;
+}
+
+.sponsor-box {
+    padding: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-image {
+    max-width: 20em;
+    width: 100%;
+    height: 100%;
+    padding-inline: 2em;
+    transition: 0.15s;
+}
+
+.sponsor-image:hover {
+    opacity: 75%;
+}
+
+.sponsor-image.uofc {
+    max-width: 23em;
+    padding-inline: 0;
+}
+
+.signup-message {
+    font-size: 1.3em;
+    font-weight: 400;
+    padding-bottom: 3em;
 }

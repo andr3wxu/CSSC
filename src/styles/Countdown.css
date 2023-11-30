@@ -1,5 +1,9 @@
 .countdown {
+    width: 100%;
+    text-align: center;
     border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     background: var(--cssc-gradient);
     font-size: 45px;
     font-family: 'DM Mono', monospace, Arial;
