@@ -40,7 +40,7 @@ const Why = () => {
               </div>
             </div>
           </div>
-          <div>graphic placeholder</div>
+          <img src="/images/why-graphic.png" className="image why-graphic"/>
         </div>
       </div>
     </div>

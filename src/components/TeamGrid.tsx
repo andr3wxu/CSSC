@@ -3,10 +3,17 @@ import FlipCard from "./FlipCard";
 
 interface Props {
   nameArray: string[];
+  positionArray: string[];
+  schoolArray: string[];
   imageArray: string[];
 }
 
-const TeamGrid = ({ nameArray, imageArray }: Props) => {
+const TeamGrid = ({
+  nameArray,
+  positionArray,
+  schoolArray,
+  imageArray,
+}: Props) => {
   return (
     <>
       <div className="team-grid">
@@ -14,6 +21,8 @@ const TeamGrid = ({ nameArray, imageArray }: Props) => {
           <div className={`team-member ${(index - 1) % 3 == 0 ? "hex" : ""}`}>
             <FlipCard
               nameArray={nameArray}
+              positionArray={positionArray}
+              schoolArray={schoolArray}
               imageArray={imageArray}
               index={index}
             />

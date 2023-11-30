@@ -1,7 +1,31 @@
 import TeamGrid from "../components/TeamGrid";
+import "../styles/Team.css"
 
 const Team = () => {
-  let nameArray = ["1", "2", "3", "4", "5", "6"];
+  let nameArray = [
+    "Ahyan Kabir",
+    "Joshua Cheng",
+    "Cheri Dang",
+    "Misha Kapadia",
+    "Haotian Fang",
+    "Janice Xie",
+  ];
+  let positionArray = [
+    "PRESIDENT",
+    "DEPUTY DIRECTOR",
+    "CONTENT DIRECTOR",
+    "IT DIRECTOR",
+    "OUTREACH DIRECTOR",
+    "OPERATIONS DIRECTOR",
+  ];
+  let schoolArray = [
+    "Class of 2024 – Westmount Charter School",
+    "Class of 2024 – Western Canada High School",
+    "Class of 2026 – Westmount Charter School",
+    "Class of 2026 - Sir Winston Churchill High School",
+    "Class of 2026 – Westmount Charter School",
+    "Class of 2026 – Sir Winston Churchill High School",
+  ];
   let imageArray = [
     "/images/ahyan.png",
     "/images/joshua.png",
@@ -11,9 +35,19 @@ const Team = () => {
     "/images/janice.jpg",
   ];
   return (
-    <div className="box team">
+    <div className="box">
       <div className="container team">
-        <TeamGrid nameArray={nameArray} imageArray={imageArray} />
+        <div className="info-box team">
+          <div className="info-card team">
+            <h1 className="heading">OUR <span className="emphasis">TEAM</span></h1>
+          </div>
+        </div>
+        <TeamGrid
+          nameArray={nameArray}
+          positionArray={positionArray}
+          schoolArray={schoolArray}
+          imageArray={imageArray}
+        />
       </div>
     </div>
   );

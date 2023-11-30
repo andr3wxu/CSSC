@@ -11,6 +11,7 @@
     align-items: center;
     text-align: center;
     margin-inline: -1.3em;
+    margin-top: -105%;
 }
 
 .team-member.hex {

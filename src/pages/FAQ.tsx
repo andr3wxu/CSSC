@@ -1,10 +1,25 @@
+import Accordion from "../components/Accordion";
+
 const FAQ = () => {
   return (
     <div>
-      <div>FAQ</div>
-      <p className={`test`}>
-        <h2>questions?</h2>
-      </p>
+      <div className="box">
+        <div className="container">
+          <div className="info-box">
+            <div className="info-card">
+              <h1 className="heading">
+                <span className="emphasis">FAQ</span>
+              </h1>
+            </div>
+            <Accordion />
+            <Accordion />
+            <Accordion />
+            <Accordion />
+            <Accordion />
+            <Accordion />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

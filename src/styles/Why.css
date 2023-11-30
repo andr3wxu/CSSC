@@ -26,12 +26,6 @@ h1 {
     width: 100%;
     padding: 0;
     justify-content: center;
-    border-radius: 10px;
-    border-bottom: solid;
-    border-color: var(--cssc-lavender);
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    background: var(--cssc-gradient);
 }
 
 .emphasis {
@@ -47,4 +41,9 @@ h1 {
 .image.why {
     width: 20em;
     margin-top: 5em;
+}
+
+.image.why-graphic {
+    width: 30em;
+    border:none;
 }

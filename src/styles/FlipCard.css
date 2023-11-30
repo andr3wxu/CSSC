@@ -24,6 +24,7 @@
 
 .hexagon-border:hover {
     background-color: var(--cssc-purple);
+    cursor: pointer;
 }
   
 .hexagon-image {
@@ -42,21 +43,58 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+    transition: 0.15s;
+}
+
+.member-image:hover {
+    filter: opacity(10%);
 }
 
 .back {
-    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    transform: rotateY(0deg);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--cssc-lavender);
+    background: var(--cssc-gradient);
     backface-visibility: visible;
     z-index: -1;
-    -webkit-transition: 0.2s ease;
+    transition-delay: 0.2s;
+    justify-content: center;
+    align-items: center;
 }
 
 .back.flipped {
+    transform: rotateY(180deg);
+    background: var(--cssc-gradient);
     z-index: 500;
+}
+
+.name {
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 600;
+    font-size: 2em;
+    width: 5em;
+    line-height: 1.1em;
+    margin-top: -0.4em;
+    margin-bottom: 0.3em;
+}
+
+.position {
+    font-weight: 500;
+    font-size: 1.1em;
+    color: var(--cssc-purple);
+    max-width: 13em;
+    line-height: 1.4em;
+}
+
+.school {
+    font-weight: 400;
+    font-size: 1.1em;
+    width: 11em;
+    line-height: 1.3em;
 }

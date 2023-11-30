@@ -3,11 +3,19 @@ import { useState } from "react";
 
 interface Props {
   nameArray: string[];
+  positionArray: string[];
+  schoolArray: string[];
   imageArray: string[];
   index: number;
 }
 
-const FlipCard = ({ nameArray, imageArray, index }: Props) => {
+const FlipCard = ({
+  nameArray,
+  positionArray,
+  schoolArray,
+  imageArray,
+  index,
+}: Props) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
@@ -20,7 +28,11 @@ const FlipCard = ({ nameArray, imageArray, index }: Props) => {
         <div className="hexagon-border">
           <div className="hexagon-image" onClick={handleFlip}>
             <img src={imageArray[index]} className="member-image" />
-            <div className={`back ${isFlipped ? "flipped" : ""}`}>hi</div>
+            <div className={`back ${isFlipped ? "flipped" : ""}`}>
+              <div className="name">{nameArray[index]}</div>
+              <div className="position">{positionArray[index]}</div>
+              <div className="school">{schoolArray[index]}</div>
+            </div>
           </div>
         </div>
       </div>

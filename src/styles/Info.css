@@ -38,6 +38,7 @@
 .info-card.info {
     border-bottom: none;
     border-right: solid;
+    border-width: 3px;
     border-color: var(--cssc-lavender);
     border-bottom-left-radius: 10px;
     border-top-right-radius: 0px;
@@ -64,8 +65,9 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    row-gap: 1em;
     padding: 0.2em;
-    padding-top: 1em;
+    padding-top: 4em;
     align-items: flex-end;
 }
 
@@ -113,11 +115,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 3em;
     justify-content: center;
 }
 
 .image.info.medal {
-    margin-top: 4em;
+    margin-top: -1em;
+}
+
+.image.info.trophy {
+    margin-top: 5em;
     margin-inline: 2em;
 }
