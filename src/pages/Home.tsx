@@ -3,6 +3,7 @@ import Countdown from "../components/Countdown";
 import Form from "../components/Form.tsx";
 import "../styles/Home.css";
 import "../styles/Page.css";
+import SignUpButton from "../components/SignUpButton.tsx";
 
 const Home = () => {
   const headingArray = ["Date", "Location", "Cost", "Who"];
@@ -31,7 +32,15 @@ const Home = () => {
         </div>
         <img className="image home" src="/images/home.jpg" />
       </div>
-      <Form />
+      {window.innerWidth < 800 ? (
+        <SignUpButton
+          text="SIGN UP"
+          link="https://forms.fillout.com/t/t2dcEXx5AMus"
+          targetBlank={true}
+        />
+      ) : (
+        <Form />
+      )}
     </div>
   );
 };

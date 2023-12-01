@@ -8,7 +8,6 @@ import Why from "./pages/Why.tsx";
 import Info from "./pages/Info.tsx";
 import Team from "./pages/Team.tsx";
 import FAQ from "./pages/FAQ.tsx";
-import SignUpButton from "./components/SignUpButton.tsx";
 
 function App() {
   const idArray = ["home", "why", "info", "team", "faq"];
@@ -24,8 +23,10 @@ function App() {
           if (section) {
             const rect = section.getBoundingClientRect();
             return (
-              rect.top <= window.innerHeight * 0.4 &&
-              rect.bottom >= window.innerHeight * 0.4
+              rect.top <=
+                window.innerHeight * (window.innerWidth < 1000 ? 0.8 : 0.4) &&
+              rect.bottom >=
+                window.innerHeight * (window.innerWidth < 1000 ? 0.8 : 0.4)
             );
           }
         })
@@ -39,7 +40,7 @@ function App() {
 
   return (
     <>
-      <TitleCard imgSrc="/images/logo-fancy.png" />
+      <TitleCard imgSrc="/images/cssc-logo.png" />
       <Navbar
         idArray={idArray}
         headingArray={headingArray}

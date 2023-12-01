@@ -1,10 +1,20 @@
 import "../styles/App.css";
 
-const SignUpButton = () => {
+interface Props {
+  text: string;
+  link: string;
+  targetBlank: boolean;
+}
+
+const SignUpButton = ({ text, link, targetBlank }: Props) => {
   return (
     <div className="sign-up-button-container">
-      <a href="#home" className="sign-up-button">
-        SIGN UP
+      <a
+        href={link}
+        target={targetBlank ? "_blank" : "_self"}
+        className="sign-up-button"
+      >
+        {text}
       </a>
     </div>
   );

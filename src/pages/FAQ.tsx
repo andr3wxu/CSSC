@@ -1,6 +1,7 @@
 import Accordion from "../components/Accordion";
 import SignUpButton from "../components/SignUpButton";
 import "../styles/FAQ.css";
+import "../styles/App.css";
 
 const FAQ = () => {
   let questionArray = [
@@ -64,8 +65,17 @@ const FAQ = () => {
           </div>
           <div className="signup-message">
             And, if you haven't already...
-            <SignUpButton />
+            <SignUpButton text="SIGN UP" link="#home" targetBlank={false} />
+            <br />
+            Or email us with any questions!
+            <a
+              href="mailto:admin@csschallenge.ca"
+              className="sign-up-button email"
+            >
+              EMAIL US
+            </a>
           </div>
+          <div className="copyright">&copy; CSSC 2023</div>
         </div>
       </div>
     </div>
