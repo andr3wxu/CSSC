@@ -35,7 +35,6 @@ const FAQ = () => {
                 <Accordion
                   question={item}
                   answer={answerArray[index]}
-                  index={index}
                 />
               ))}
             </div>

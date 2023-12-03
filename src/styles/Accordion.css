@@ -8,14 +8,6 @@
     border-color: var(--cssc-lavender);
 }
 
-.accordion-container:hover {
-    /* background: var(--cssc-gradient); */
-}
-
-.accordion-container.toggled {
-    /* background: var(--cssc-gradient); */
-}
-
 .question-container {
     display: flex;
     flex-direction: row;

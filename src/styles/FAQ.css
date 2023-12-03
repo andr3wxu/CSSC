@@ -83,11 +83,13 @@
     font-size: 20px;
     margin-top: 1em;
     max-width: 5em;
+    
 }
 
 .copyright {
     color: rgb(188, 188, 188);
     font-size: 15px;
+    padding-bottom: 1em;
 }
 
 @media screen and (max-width: 800px) {

@@ -18,7 +18,7 @@ const TeamGrid = ({
     <>
       <div className="team-grid">
         {nameArray.map((name, index) => (
-          <div className={`team-member ${(index - 1) % 3 == 0 ? "hex" : ""}`}>
+          <div className={`team-member ${(index - 1) % 3 == 0 && name ? "hex" : ""}`}>
             <FlipCard
               nameArray={nameArray}
               positionArray={positionArray}

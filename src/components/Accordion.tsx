@@ -4,10 +4,9 @@ import "../styles/Accordion.css";
 interface Props {
   question: string;
   answer: string;
-  index: number;
 }
 
-const Accordion = ({ question, answer, index }: Props) => {
+const Accordion = ({ question, answer}: Props) => {
   const [isToggled, setIsToggled] = useState(false);
   const handleClick = () => {
     setIsToggled(!isToggled);
